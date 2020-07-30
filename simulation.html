@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simulation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/radios-to-slider.css">
+
+    <style>
+      .my-3 {
+        font-size: 2rem;
+        font: bold;
+        color: rgb(200, 213, 224);
+      }
+
+      @media screen and (min-width: 601px) {
+        .text {
+          font-size: 20px;
+        }
+
+      }
+
+      @media screen and (max-width: 600px) {
+        .text {
+          font-size: 13px;
+        }
+
+      }
+
+      .remove {
+        width: 550px;
+        height: 50px;
+        float: left;
+      }
+    </style>
+
+  </head>
+
+  <body style="color: antiquewhite;">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style=" z-index: 20000;">
+      <button class="navbar-toggler sideMenuToggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">
+
+        <div class="text">Dr. A.P.J. Abdul Kalam Technical University, Uttar Pradesh, Lucknow</div>
+
+      </a>
+
+      </ul>
+
+      </div>
+    </nav>
+
+    <div class="wrapper d-flex">
+
+      <div class="sideMenu bg-mattBlackLight">
+        <div class="sideBar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2">
+                <i class="material-icons icon">dashboard</i>
+                <span class="text">Aim</span></a></li>
+
+            <li class="nav-item"><a href="theory.html" class="nav-link px-2">
+                <i class="material-icons icon">view_list</i>
+                <span class="text">Theory</span></a></li>
+
+            <li class="nav-item"><a href="procedure.html" class="nav-link  px-2">
+                <i class="material-icons icon">library_books</i>
+                <span class="text">Procedure</span></a></li>
+
+            <li class="nav-item"><a href="simulation.html" class="nav-link px-2">
+                <i class="material-icons icon">computer</i>
+                <span class="text">Simulation</span></a></li>
+
+            <li class="nav-item"><a href="test.html" class="nav-link  px-2">
+                <i class="material-icons icon">assignment_turned_in</i>
+                <span class="text">Test</span></a></li>
+
+            <li class="nav-item"><a href="refrences.html" class="nav-link  px-2">
+                <i class="material-icons icon">question_answer</i>
+                <span class="text">Refrences</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <main>
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <p class="my-3" style="font-weight: bolder;color: #031163;">Prime Number</p>
+            </div>
+
+          </div>
+      </div>
+      </main>
+    </div>
+
+    </div>
+
+    <div style="position: absolute; left: 14rem;">
+      <div class="row" style="margin-top: 1rem; margin-bottom: 1rem;">
+        <div class="col-4">
+          <!-- <div class="col"> -->
+          <div id="radios">
+            <input id="option1" name="options" type="radio" value="1">
+            <label for="option1">1 Sec&nbsp;</label>
+            <input id="option2" name="options" type="radio" value="2" checked>
+            <label for="option2">2 Sec &nbsp;</label>
+            <input id="option3" name="options" type="radio" value="3">
+            <label for="option3">3 Sec &nbsp;</label>
+            <input id="option4" name="options" type="radio" value="4">
+            <label for="option4">4 Sec&nbsp;</label>
+            <input id="option5" name="options" type="radio" value="5">
+            <label for="option5">5 Sec&nbsp;</label>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="Size" class="sr-only">Value</label>
+            <input type="text" class="form-control" id="value" placeholder="Value" required>
+          </div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="col-3"> -->
+        <div class="col-3">
+          <button type="button" class="btn btn-primary mb-2" id="search" onclick="generateNumbers()">Generate</button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="button" class="btn btn-primary mb-2" id="start" onclick="primeNumbers()">Start</button>
+        </div>
+
+        <div>
+
+          <!-- </div> -->
+        </div>
+
+
+        <div class="row">
+          <div>
+            <ul class="list-group">
+              <li class="list-group-item active" style="display:flex;justify-content: center; align-items: center;">
+                Algorithm
+              </li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-1">
+                &nbsp;&nbsp;&nbsp;&nbsp;def print_first_N_primes(N):
+              </li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-2">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for i in range(2, N + 1, 1):
+              </li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-3">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k = 0</li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-4">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for j in range(2, i//2 + 1):
+              </li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-5">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (i%j
+                == 0):
+              </li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-6">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k
+                = k+1
+              </li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-7">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (k <= 0): </li>
+              <li class="list-group-item" style="font-size: 14px; color: black;" id="li-8">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(i)
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <!-- <div class="row"> -->
+            <div id="visualizer">
+              <div class="remove"></div>
+            </div>
+            <div id="index" />
+            <!-- </div> -->
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom" style="height: 2rem; z-index: 20000;">
+      </nav> -->
+
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="js/jquery.slimscroll.min.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/index.js"></script>
+
+      <script>
+
+        var preloader = document.getElementById('loading')
+
+        function MyFunction() {
+          preloader.style.display = 'none';
+        }
+
+      </script>
+      <script src="js/jquery.radios-to-slider.js"></script>
+      <script>
+        $("#radios").radiosToSlider();
+        $("#radios").radiosToSlider({
+          size: 'medium',
+          animation: true,
+          fitContainer: true,
+          isDisable: false,
+          onSelect: null
+        });
+      </script>
+
+  </body>
+
+</html>

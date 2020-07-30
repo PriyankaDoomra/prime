@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <style>
+      .my-3 {
+        font-size: 2rem;
+        font: bold;
+        color: rgb(200, 213, 224);
+      }
+
+      @media screen and (min-width: 601px) {
+        .text {
+          font-size: 20px;
+        }
+
+      }
+
+      @media screen and (max-width: 600px) {
+        .text {
+          font-size: 13px;
+        }
+
+      }
+    </style>
+
+  </head>
+
+  <body style="color: antiquewhite;">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style=" z-index: 20000;">
+      <button class="navbar-toggler sideMenuToggler" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="#">
+
+        <div class="text">Dr. A.P.J. Abdul Kalam Technical University, Uttar Pradesh, Lucknow</div>
+
+      </a>
+
+      </ul>
+
+      </div>
+    </nav>
+
+    <div class="wrapper d-flex">
+
+      <div class="sideMenu bg-mattBlackLight">
+        <div class="sideBar">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2">
+                <i class="material-icons icon">dashboard</i>
+                <span class="text">Aim</span></a></li>
+
+            <li class="nav-item"><a href="theory.html" class="nav-link px-2">
+                <i class="material-icons icon">view_list</i>
+                <span class="text">Theory</span></a></li>
+
+            <li class="nav-item"><a href="procedure.html" class="nav-link  px-2">
+                <i class="material-icons icon">library_books</i>
+                <span class="text">Procedure</span></a></li>
+
+            <li class="nav-item"><a href="simulation.html" class="nav-link px-2">
+                <i class="material-icons icon">computer</i>
+                <span class="text">Simulation</span></a></li>
+
+            <li class="nav-item"><a href="test.html" class="nav-link  px-2">
+                <i class="material-icons icon">assignment_turned_in</i>
+                <span class="text">Test</span></a></li>
+
+            <li class="nav-item"><a href="refrences.html" class="nav-link  px-2">
+                <i class="material-icons icon">question_answer</i>
+                <span class="text">Refrences</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <main>
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <p class="my-3" style="font-weight: bolder;color: #031163;">Prime Number</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <div style="position: absolute; left: 13.5rem;">
+      <div class="text" style="color: black; font-size: 22px;font-weight: bold;">
+        Multiple Choice Question
+      </div>
+      <br>
+      <div style="color: black;">
+        <form>
+          1. Which of the following commands will create a list?<br>
+          &nbsp;&nbsp;<input type="radio" value="1-a" name="ans">&nbsp;&nbsp; list1 = list()<br>
+          &nbsp;&nbsp;<input type="radio" value="1-b" name="ans">&nbsp;&nbsp;list1 = []<br>
+          &nbsp;&nbsp;<input type="radio" value="1-c" name="ans">&nbsp;&nbsp;list1 = list([1, 2, 3])<br>
+          &nbsp;&nbsp;<input type="radio" value="1-d" name="ans">&nbsp;&nbsp;all of the mentioned<br>
+        </form>
+        <div id='result-1'></div>
+        <br>
+        <form>
+          2. The smallest 3 digit prime number is?<br>
+          &nbsp;&nbsp;<input type="radio" value="2-a" name="ans">&nbsp;&nbsp;101<br>
+          &nbsp;&nbsp;<input type="radio" value="2-b" name="ans">&nbsp;&nbsp;103<br>
+          &nbsp;&nbsp;<input type="radio" value="2-c" name="ans">&nbsp;&nbsp;109<br>
+          &nbsp;&nbsp;<input type="radio" value="2-d" name="ans">&nbsp;&nbsp;113<br>
+        </form>
+        <div id='result-2'></div>
+        <br>
+        <form>
+          3. How many keyword arguments can be passed to a function in a single function call?<br>
+          &nbsp;&nbsp;<input type="radio" value="3-a" name="ans">&nbsp;&nbsp;zero<br>
+          &nbsp;&nbsp;<input type="radio" value="3-b" name="ans">&nbsp;&nbsp;one<br>
+          &nbsp;&nbsp;<input type="radio" value="3-c" name="ans">&nbsp;&nbsp;zero or more<br>
+          &nbsp;&nbsp;<input type="radio" value="3-d" name="ans">&nbsp;&nbsp;one or more<br>
+        </form>
+        <div id='result-3'></div>
+        <br>
+        <form>
+          4. What will be the output of the following Python code?<br>
+          x = 123<br>
+          for i in x:<br>
+            &nbsp;&nbsp; print(i)<br><br>
+          &nbsp;&nbsp;<input type="radio" value="4-a" name="ans">&nbsp;&nbsp;O(nlogn)<br>
+          &nbsp;&nbsp;<input type="radio" value="4-b" name="ans">&nbsp;&nbsp;O(logn)<br>
+          &nbsp;&nbsp;<input type="radio" value="4-c" name="ans">&nbsp;&nbsp;O(n)<br>
+          &nbsp;&nbsp;<input type="radio" value="4-d" name="ans">&nbsp;&nbsp;O(1)<br>
+        </form>
+        <div id='result-4'></div>
+        <br>
+        <form>
+          5. The function divmod(a,b), where both ‘a’ and ‘b’ are integers is evaluated as?<br>
+          &nbsp;&nbsp;<input type="radio" value="5-a" name="ans">&nbsp;&nbsp;(a%b, a//b)<br>
+          &nbsp;&nbsp;<input type="radio" value="5-b" name="ans">&nbsp;&nbsp;(a//b, a%b)<br>
+          &nbsp;&nbsp;<input type="radio" value="5-c" name="ans">&nbsp;&nbsp;(a//b, a*b)<br>
+          &nbsp;&nbsp;<input type="radio" value="5-d" name="ans">&nbsp;&nbsp;(a/b, a%b)<br>
+        </form>
+        <div id='result-4'></div>
+        <br>
+        <form>
+          5. Python inbuilt function to find maximum element in list?<br>
+          &nbsp;&nbsp;<input type="radio" value="5-a" name="ans">&nbsp;&nbsp;max()<br>
+          &nbsp;&nbsp;<input type="radio" value="5-b" name="ans">&nbsp;&nbsp;max_element()<br>
+          &nbsp;&nbsp;<input type="radio" value="5-c" name="ans">&nbsp;&nbsp;None of the above<br>
+          &nbsp;&nbsp;<input type="radio" value="5-d" name="ans">&nbsp;&nbsp;Both a and b<br>
+        </form>
+        <div id='result-5'></div>
+        <br>
+      </div>
+      <button type="button" class="btn btn-primary mb-2" id="check" onclick="check()">Submit</button>
+    </div>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom" style="height: 2rem; z-index: 20000;">
+    </nav> -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="js/jquery.slimscroll.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/test.js"></script>
+    <!-- 
+    <script>
+
+      var preloader = document.getElementById('loading')
+
+      function MyFunction() {
+        preloader.style.display = 'none';
+      }
+
+    </script> -->
+
+  </body>
+
+</html>
